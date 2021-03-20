@@ -1,1 +1,52 @@
 
+Hello ! Welcome back from Rh4P's Blog. 
+Rh4P's Blog ကနေ အားလုံးကို ပြန်လည်ကြိုဆိုလိုက်ပါတယ် ။🤩🤩ဒီနေ့မှာတော့ knowledge sharing အနေနဲ့ Bug Bounty Hunter Career ကိုလျှောက်လှမ်းလိုသူတွေအတွက် ဘယ်ကစသင့်တယ်ဆိုတာကို ပြောပြပေးသွားမှာဖြစ်ပါတယ်။ဒီလို sharing လုပ်ခွင့်ပေးတဲ့ Bro Jawad Mahdi ကိုလည်း ကျေးဇူးအများကြီးတင်ပါတယ် ။ [Thank you Bro Jawad Mahdi for letting me share your idea <3]
+I give fully credit to Bro Jawad Mahdi for this post.
+
+Bug Bounty Resources for a Beginner!
+=========================
+ဒါတွေကို တစ်ရက်ချင်းပုံမှန်ပြုလုပ်သွားပြီးတော့ လိုအပ်တဲ့ Basic Concepts တွေကို ရရှိမှာဖြစ်ပါတယ် ။
+1)https://github.com/shadforth/pentesterlab-bootcamp
+
+သူ့မှာ ဘာတွေပါလည်းဆိုရင် Web Pentesting နဲ့ Network စတာတွေနဲ့ပတ်သတ်တဲ့ Bug Bounty Basic တွေပါပါတယ် ။ 
+
+2)https://www.youtube.com/watch?v=hDYqWZ11njU&list=PLbyncTkpno5FAC0DJYuJrEqHSMdudEffw
+
+ဒီPlaylist မှာကျ Bugတွေအကြောင်းရယ် သူတို့ကိုဘယ်လိုရှာရလည်းဆိုတဲ့အကြောင်းတွေရယ်ပါဝင်ပါတယ်။
+
+အဲ့နှစ်ခုကို လေ့လာပြီးပြီ နားလည်ပြီဆိုရင်တော့ အောက်က labs တွေကို စပြီးဖြေကြည့်လို့ရပါပြီ။
+
+Labs
+-https://pentesterlab.com/exercises
+-https://portswigger.net/web-security
+
+အဲ့ labs တွေအားလုံးကိုဖြေကြည့်ပါ၊ကိုယ်ကငွေကြေးတတ်နိုင်ရင်တော့ PentesterLab Pro ကိုဝယ်ပြီးဖြေကြည့်လို့ရပါတယ် ဒါမှမဟုတ် free exercises တွေပဲဖြေမယ်ဆိုလည်း အဆင်ပြေပါတယ် ။ 
+
+နောက်ဆုံးအနေနဲ့တော့ 
+
+Jump to Real Bug Hunting and Follow these resources alongside Hunting
+
+https://github.com/KathanP19/HowToHunt - Bug ကိုဘယ်လိုရှာရမယ်ဆိုတဲ့ resources တွေ
+https://github.com/swisskyrepo/PayloadsAllTheThings -  Burpsuite Fuzzing အတွက်လိုအပ်တဲ့ Payloads တွေ
+https://github.com/reddelexc/hackerone-reports - သူများတွေ ဘယ်လိုရှာဖွေထားတယ်ဆိုတဲ့ reports တွေကိုဖတ်ရှုကြည့်ခြင်းအားဖြင့် ကိုယ့်ရဲ့ ကိုယ်ပိုင်Ideaကိုတိုးတက်စေမှာဖြစ်ပါတယ်ဗျာ
+Blogs တွေဖတ်ပါ Pentesterland က Writeups တွေဖတ်ပါ ။ Google ကနေတစ်ဆင့်အမျိုးမျိုးသော writeups တွေကိအခမဲ့ရှာဖွေ ဖတ်ရှုနိုင်ကြပါတယ် ။ 
+https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE - ဒီကောင့်မှာတော့ practical hacking resources တွေအများကြီးပါဝင်ပါတယ်။ Web Application Handbook 2nd Edition,hacker play book 1,2,3 . Bug Bounty Playbook v2 စတဲ့ Books တွေရှာဖတ်ပါ ။ Particular Topic တစ်ခုခုကို နားမလည်နိုင်ဘူးဖြစ်နေခဲ့ရင်တော့ ကိုယ် stuck ဖြစ်နေတဲ့ Topic ကို details ကျကျလေ့လာပါ ။ အကုန်လုံးကို တစ်ချက်တည်းမလုပ်ပါနဲ့ ဖွတ်မရဓားမဆုံးဖြစ်တတ်ပါတယ် ။
+
+နောက်ဆုံးအဆုံးသတ်အနေနဲ့တော့ 
+
+Don't only focus on learning. Give more time on practical.
+Keep Focusing on Your Dreams.Keep Learning and Hacking!!
+
+Edited :: Watch this video down below from InsiderPhD, titled "How to stop learning and start hacking" :
+https://youtu.be/etP1hgJXijw
+
+အခုလို Knowledge Sharing Post တွေအပြင် Tutorial လေးတွေကိုပါ  Beginner တွေလေ့လာဖို့ အတွက် ကျွန်တော့် Page ကနေအပတ်တိုင်း တင်ပေးသွားမှာဆိုတော့ ဘာကိုစောင့်နေအုံးမှာလည်း အခုပဲ Rh4P's Blog ကိုLike and Follow လုပ်ထားကြတော့ပေါ့ ။ 🥳❤
+အခုလို sharing လုပ်ပေးမယ့်လူတွေရှိရင် လည်း warmly welcome ပါဗျာ။
+Page chatbox ကိုတစ်ချက်ဆက်သွယ်ပေးပါ။
+SQL နဲ့ ပတ်သတ်ပြီး ဖတ်ချင်ရင် ဒီ post မှာသွားဖတ်လို့ရပါတယ်ဗျ ။ 
+https://www.facebook.com/rhapsodyblog/posts/252195182928591
+Pythonနဲ့ပတ်သတ်ပြီး ဖတ်ချင်ရင် ဒီ post မှာသွားဖတ်လို့ရပါတယ်ဗျ ။ 
+https://www.facebook.com/105455394269238/posts/243781867103256/
+
+#rh4p50Dy
+#picsrcgoogle
