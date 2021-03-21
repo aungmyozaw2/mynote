@@ -1,0 +1,15 @@
+for export permanently 
+
+https://stackoverflow.com/questions/13046624/how-to-permanently-export-a-variable-in-linux
+
+docker run -p 6070:80 dorowu/ubuntu-desktop-lxde-vnc
+
+docker 
+
+https://www.jetbrains.com/help/youtrack/standalone/start-stop-docker.html#youtrack-docker-start
+
+https://stackoverflow.com/questions/34496882/get-docker-container-id-from-container-name
+
+docker ps --format 'CONTAINER ID : {{.ID}} | Name: {{.Names}} | Image:  {{.Image}} |  Ports: {{.Ports}}'
+
+docker stop -t 60 <containerId>
