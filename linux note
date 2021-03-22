@@ -13,3 +13,10 @@ https://stackoverflow.com/questions/34496882/get-docker-container-id-from-contai
 docker ps --format 'CONTAINER ID : {{.ID}} | Name: {{.Names}} | Image:  {{.Image}} |  Ports: {{.Ports}}'
 
 docker stop -t 60 <containerId>
+
+
+for usermanager in linux
+
+apt install mugshot
+
+apt install gnome-system-tools
