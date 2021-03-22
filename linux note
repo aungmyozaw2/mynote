@@ -17,6 +17,10 @@ docker stop -t 60 <containerId>
 
 for usermanager in linux
 
+sudo apt-get update; sudo apt-get install xfce4-whiskermenu-plugin
+
 apt install mugshot
 
 apt install gnome-system-tools
+
+
