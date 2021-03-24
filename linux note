@@ -23,4 +23,6 @@ apt install mugshot
 
 apt install gnome-system-tools
 
+wine install in debian
 
+https://linuxhint.com/install_wine_debian_10/
