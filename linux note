@@ -26,3 +26,12 @@ apt install gnome-system-tools
 wine install in debian
 
 https://linuxhint.com/install_wine_debian_10/
+
+
+
+
+printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debian Linux And Paste Down\n'
+read -p "Paste Here: " CRP
+su - aunglay -c """$CRP"""
+printf 'Check https://remotedesktop.google.com/access/ \n'
+printf 'This is my account www.facebook.com/aungmyozaw123 \n'
