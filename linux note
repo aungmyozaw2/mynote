@@ -35,3 +35,5 @@ read -p "Paste Here: " CRP
 su - aunglay -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n'
 printf 'This is my account www.facebook.com/aungmyozaw123 \n'
+
+sudo apt install synaptic => for uninstall in linux https://www.fosslinux.com/14058/best-3-ways-to-uninstall-software-on-ubuntu.htm
