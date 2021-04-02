@@ -41,3 +41,11 @@ https://www.howtogeek.com/229699/how-to-uninstall-software-using-the-command-lin
 
 
 https://getintopc.com/
+
+
+
+sudo add-apt-repository -y ppa:teejee2008/timeshift
+sudo apt-get update
+sudo apt-get install timeshift
+
+timeshift-launcher
