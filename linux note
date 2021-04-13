@@ -49,3 +49,5 @@ sudo apt-get update
 sudo apt-get install timeshift
 
 timeshift-launcher
+
+name ALL=(ALL) NOPASSWD:ALL
