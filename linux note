@@ -51,3 +51,5 @@ sudo apt-get install timeshift
 timeshift-launcher
 
 name ALL=(ALL) NOPASSWD:ALL
+
+apt install tasksel
