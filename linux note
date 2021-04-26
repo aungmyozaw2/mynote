@@ -34,6 +34,9 @@ printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debia
 read -p "Paste Here: " CRP
 su - aunglay -c """$CRP"""
 
+figlet "name in bashrc"
+
+
 
 printf 'Check https://remotedesktop.google.com/access/ \n'
 printf 'This is my account www.facebook.com/aungmyozaw123 \n'
