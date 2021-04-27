@@ -70,4 +70,6 @@ apt install xrdp xfce4 -y
 
 for install ubuntu install window and nmap install 
 
+for window location 
+/mnt/c/Users/Aung Myo Zaw
 alias nmap='"/mnt/c/Program Files (x86)/Nmap/nmap.exe"'
