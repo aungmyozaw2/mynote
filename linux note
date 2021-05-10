@@ -79,6 +79,7 @@ for window location
 /mnt/c/Users/Aung Myo Zaw
 alias nmap='"/mnt/c/Program Files (x86)/Nmap/nmap.exe"'
 
+chown ownername filename
 
 apt install jp2a -y
 jp2a --border filemane.jpg
