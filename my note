@@ -1,1 +1,96 @@
 
+free internet note
+
+SSH over SSH - How to get Internet access with no outgoing traffic allowed behind a firewall
+
+This is probably one of the geekier tutorials we’ve posted to date but should hopefully help anyone who finds themselves with a similar problem to this one.
+
+Scenario:
+You have a server that’s sat behind a firewall that you don’t control. The firewall lets you SSH in, but won’t let any traffic out of the server whatsoever.
+
+This causes issues if you’re trying to do things like install packages or download anything on the server that’s behind the firewall as it essentially can’t contact the outside world at all in any way.
+
+Tutorial Summary
+We’re going to show you how to SSH back over the SSH connection you make on the way in and create a SOCKS proxy on the local host that sends its traffic back over SSH, over the SSH tunnel we first created on the way in without the firewall dropping our packets.
+
+This tutorial is based on the assumption that you are using a Linux/UNIX environment (Mac, Linux etc.). You can probably make this work on a Windows PC but how to do this is outside the scope of this tutorial.
+
+IP Addresses and Assumptions
+Server IP Address = 1.1.1.1
+Local IP Address = 2.2.2.2
+
+Server Username = serveruser
+Local Username = localuser
+
+Server sits behind a firewall, can’t make any outbound connections.
+
+Obviously you want to adjust the IP address values as appropriate!
+
+Step 1 – Enable SSH Server Locally
+You’ll need to enable an SSH server on your machine. On Mac, you open “System Preferences”, hit “Sharing”, then tick the “Remote Login” checkbox on the left.
+
+On Linux, you should more or less be able to run “sudo service ssh start”. Depending on how your system’s configured that should let you login to your local machine.
+
+Step 2 – Port Forward a Port from the Server Back To You
+We’re going to SSH into the server from our machine and then using this SSH connection, port forward a port number back to our local machine on port 22. This is so we can expose the SSH server that we have sat locally, on the remote server without having to make an outbound connection.
+
+ssh serveruser@1.1.1.1 -R 45712:127.0.0.1:22
+We’ve chosen to use port 45712 as our port on the remote server that points back to port 22 on our machine. Why? No particular reason other than it’s a fairly high port (>1,000) and so is probably not in use and doesn’t require root privileges to bind to.
+
+We should now be sat at a shell prompt on the remote server.
+
+Step 3 – Open a SOCKS Proxy Back Over the Existing SSH Connection
+Next, we make another SSH connection, this time back through the port-forward we just created and we use the -D flag to tell SSH to create a local SOCKS proxy running on port 2001 (again, random port – feel free to modify).
+
+Because we’re using a port-forward this connection is essentially SSH over SSH and means that we don’t need to go through the firewall to make this outbound connection. This also means we don’t need to traverse any NAT we have in place at our end so our local machine doesn’t need to have an externally available IP address (can sit behind NAT like most local machines).
+
+ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -D 2001 localuser@127.0.0.1 -p 45712
+You should end up SSH’d back into your local machine, from the remote server, after having SSH’d into that in the first place. Kinda comes full circle.
+
+Step 4 – Open a New Terminal
+At this point, we’ve got a SOCKS proxy running back over our initial inbound connection that we made. I would recommend opening another terminal for this step.
+
+ssh serveruser@1.1.1.1
+This should just put you back into a command line shell on the server.
+
+Step 5 – Install Tsocks to Proxy data via SSH (for applications that don’t support SOCKS)
+One of the big problems with SOCKS proxies is that not all applications support them. At this stage you could fire up, say, a web browser and point it at your SOCKS proxy on 127.0.0.1:2001. That should work fine.
+
+The reason we look at using Tsocks at this point is because what we really want to do is to install some packages using apt-get which, annoyingly, offers no native SOCKS proxy support.
+
+First, download Tsocks and get it onto your remote server. The easiest way to do this is to download it locally, then upload it to your server using SCP. It’s not the prettiest way of doing it but it works.
+
+Once you’ve got Tsocks onto your server, configure and compile it using the following flags:
+
+./configure --enable-socksdns --disable-hostnames
+We’ve used the —enable-socksdns flag as our remote server in this instance doesn’t actually have a local DNS server that works properly, so the DNS resolution will be done on our local machine.
+
+Step 6 – Configuring Tsocks
+This seems to work best as root and as the apt-get commands we’re going to be using later have to be run as the super user, you may as well switch to a root shell. Type:
+
+sudo bash
+on the remote server shell you have open. You should now be root.
+
+Configure Tsocks as follows – the configuration file is in /etc/tsocks.conf on most systems.
+
+nano /etc/tsocks.conf
+Then make it look like this:
+local = 127.0.0.1/255.255.255.0
+local = 10.0.0.0/255.0.0.0
+server = 127.0.0.1
+server_type = 5
+server_port = 2001
+
+Server port is the one we set in Step 3 – if you changed it then obviously make sure you make the relevant changes at this stage as well.
+Save the file (control + o), then quit nano (control + x).
+
+Step 7 – Using Tsocks
+For some reason, compiling Tsocks with support for SOCKS DNS breaks something with Tsocks’ native -on, -off and -show flags so the easiest way to get around this is to open a new bash shell using tsocks as the wrapper.
+
+tsocks bash
+What you’re now in, is a shell that is wrapped in tsocks, meaning that any command that you run will go over the SOCKS proxy, even if it doesn’t support SOCKS connections natively. Magic.
+
+Try running apt-get update/upgrade and watch as your server happily downloads updated packages from the Internet that it didn’t have access to before.
+
+If anyone finds themselves using this technique, let us know in the comments. Any questions on or improvements to this guide are more than welcome!
+
