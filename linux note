@@ -8,6 +8,8 @@ docker command
 docker search "ubuntu vnc"
 for docker check
 https://docs.docker.com/engine/reference/commandline/container_ls/v
+for username and passwd
+https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/
 
 
 docker 
