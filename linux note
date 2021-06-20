@@ -79,8 +79,10 @@ apt install xrdp xfce4 -y
 
 ssh file share with command
 
+give
 To copy a file from B to A while logged into B:
 scp /path/to/file username@a:/path/to/destination
+take
 To copy a file from B to A while logged into A:
 scp username@b:/path/to/file /path/to/destination
 
