@@ -6,8 +6,7 @@ https://stackoverflow.com/questions/13046624/how-to-permanently-export-a-variabl
 docker run -p 6070:80 dorowu/ubuntu-desktop-lxde-vnc
 docker command
 docker search "ubuntu vnc"
-for docker check
-https://docs.docker.com/engine/reference/commandline/container_ls/v
+https://docs.docker.com/engine/reference/commandline/container_ls/
 for username and passwd
 https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/
 
