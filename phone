@@ -7,6 +7,7 @@ fastboot command
 fastboot devices
 fastboot reboot 
 fastboot flash recovery twrp.img
+fastboot boot twrp.img => fastboot to recovery 
 
 adb command 
 
