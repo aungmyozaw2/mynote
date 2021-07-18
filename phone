@@ -13,3 +13,8 @@ fastboot oem edl => fastboot to edl mode
 adb command 
 
 adb reboot bootloader => adb to fastboot
+adb reboot edl => adb to edl (something will be error)
+
+redmi 8 bypass file 
+
+bypassfrpfiles.com/2021/04/xiaomi-redmi-8-frp-mi-account-bypass-file/
