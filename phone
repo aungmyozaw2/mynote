@@ -9,6 +9,7 @@ fastboot reboot
 fastboot flash recovery twrp.img
 fastboot boot twrp.img => fastboot to recovery 
 fastboot oem edl => fastboot to edl mode
+fastboot getvar product => to get android id
 
 adb command 
 
