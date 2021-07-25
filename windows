@@ -3,6 +3,7 @@ run command
 resmon.exe => for file close
 ctfmon => for typing words
 appwiz.cpl => for uninstall software
+regedit => open system edit
 
 for remove virus
 
@@ -17,3 +18,5 @@ recent
 prefetch
 cleanmgr
 computer management
+
+restore point
