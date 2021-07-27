@@ -20,3 +20,17 @@ cleanmgr
 computer management
 
 restore point
+
+for setup speedboot in window 10 (computer boot and wifi boot)
+
+for computer space boot
+
+use virtual rom for speed boot
+file explorer => this pc => properties => advance => first setting => advance 
+
+for wifi speedboot
+
+change cloudflare
+netsh
+interface ip show config
+interface ip set dns "Wi-Fi" static 1.1.1.1
