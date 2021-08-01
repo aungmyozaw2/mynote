@@ -35,6 +35,11 @@ netsh
 interface ip show config
 interface ip set dns "Wi-Fi" static 1.1.1.1
 
+window software 
+
+adm 
+faststone
+
 
 how to prevent auto refresh tab in chrome
 
