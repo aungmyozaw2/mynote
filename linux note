@@ -116,3 +116,7 @@ error
 https://askubuntu.com/questions/1266872/minimize-maximize-buttons-missing-tightenvnc-ubuntu-20-04
 chrome download
 https://www.omgubuntu.co.uk/how-to-install-google-chrome-on-ubuntu
+
+port kill 
+
+sudo kill $(sudo lsof -t -i:3000)
