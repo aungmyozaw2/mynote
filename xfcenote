@@ -1,1 +1,10 @@
 sudo apt-get install xfce4-whiskermenu-plugin => for search 
+
+chrome-remote-desktop
+
+1. don't create repeat user account 
+2. install python 3.7 ( for without error)
+
+how to install python 3.7.3 in ubuntu
+
+https://phoenixnap.com/kb/how-to-install-python-3-ubuntu
