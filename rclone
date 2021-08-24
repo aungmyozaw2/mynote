@@ -1,3 +1,6 @@
 rclone config => for start rclone 
+rclone listremotes => for show rclone list
+rclone ls drive: => show like ls command
+rclone mount <username>: path => for mount drive
 
 for configure read document
