@@ -26,3 +26,6 @@ startxfce4 &
 
 $ sudo chmod +x ~/.vnc/xstartup
 $ vncserver
+
+button layout error 
+https://askubuntu.com/questions/1266872/minimize-maximize-buttons-missing-tightenvnc-ubuntu-20-04
