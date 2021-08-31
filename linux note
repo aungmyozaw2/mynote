@@ -124,3 +124,8 @@ sudo kill $(sudo lsof -t -i:3000)
 for install utorrent
 
 https://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/install-%CE%BCtorrent-utorrent-on-ubuntu-18-04-ubuntu-17-10-17-04.html
+
+
+for root without sudo passwd 
+
+username ALL=(ALL:ALL) NOPASSWD:ALL
