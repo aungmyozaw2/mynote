@@ -10,19 +10,13 @@ Anyone know how long is the timeout for hitting usage limits for Google Colab Pr
 
 https://www.reddit.com/r/deeplearning/comments/kvj3xm/anyone_know_how_long_is_the_timeout_for_hitting/
 
-
-google colab hack
-
-https://www.programmersought.com/article/53825119050/
-
-
 minging knowledge
 
 1.35kh/s in sugar
 
 https://bitcoin.stackexchange.com/questions/9219/what-is-the-difference-between-kh-s-mh-s-and-gh-s
 https://www.hashrates.com/cpus/
-https://minerstat.com/hardware/nvidia-tesla-p100-pcie-16gb
+
 
 session keepalive webstore
 
@@ -40,6 +34,14 @@ tesla t4
 
 https://www.betterhash.net/NVIDIA-Tesla-T4-mining-profitability-26440860.html
 
+tesla P100 
+
+https://minerstat.com/hardware/nvidia-tesla-p100-pcie-16gb
+
+tesla v100
+
+https://www.miningbenchmark.net/calculator1.php?idcarte=423
+
 
 
 limited cpu
@@ -56,7 +58,7 @@ https://stackoverflow.com/questions/57113226/how-to-prevent-google-colab-from-di
 google colab pro ++ feature
 
 https://heads0rtai1s.github.io/2021/08/24/colab-plus-kaggle-cloud-gpu/
-https://www.miningbenchmark.net/calculator1.php?idcarte=423
+
 
 
 
