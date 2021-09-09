@@ -11,3 +11,4 @@ apt install screen -y
 screen <command>  => for run with command
 screen -S <session_name> => for create session with name
 screen -d -m -S <session_name> => for auto run in background
+pkill screen => for  kill all screen 
