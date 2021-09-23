@@ -28,3 +28,7 @@ https://developpaper.com/linux-system-to-tor-socks5-proxy-into-http-proxy-tutori
 for test
 
 https://askubuntu.com/questions/610333/how-to-set-socks5-proxy-in-the-terminal#:~:text=http_proxy%3D%22socks5%3A//localhost%3A9050%22
+---------------------------------------------------------
+http proxy in terminal 
+
+https://www.shellhacks.com/linux-proxy-server-settings-set-proxy-command-line/#:~:text=To%20use%20a%20proxy%20on,%2Dget%20%2C%20yum%20and%20others.
