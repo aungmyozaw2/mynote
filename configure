@@ -2,6 +2,11 @@ danted install for socks5
 
 https://www.binarytides.com/setup-dante-socks5-server-on-ubuntu/#:~:text=How%20to%20setup%20a%20Socks5%20Proxy%20server%20on,connecting%20clients.%20...%204%20Test%20with%20curl.%20
 -----------------------------------------------------------
+squid configure
+
+https://linuxhint.com/install-and-setup-squid-proxy-server-on-linux-server/
+---------------------------------------------------------
+
 redsocks
 
 https://superuser.com/questions/1401585/how-to-force-all-linux-apps-to-use-socks-proxy
